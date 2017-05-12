@@ -12,11 +12,11 @@ function imprimir() {
     var contenido = "";
 
     //recorremos el arreglo listaStudent
-    listaStudent.forEach(function(datos) {
+    imprimir.forEach(function(datos) {
         contenido += "<div>" + datos.nombre + "<br>" +
             "Apellido:" + datos.apellido + "<br>" +
             "Correo Electrónico:" + datos.correo+ "<br>" +
-            "Dirección" + datos.direccion + "<br>" + "Teléfono: " + datos.telefono + </div><br>";
+            "Dirección" + datos.direccion + "<br>" + "Teléfono: " + datos.telefono + "</div><br>";
         console.log(contenido);
     });
 
