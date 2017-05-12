@@ -5,24 +5,30 @@ background: url(../img/maxresdefault.jpg) no-repeat;
 background-position:  center center;
 }
 
-
-
-.bienvenida{
-
-	background: beige; 
-	font-size: 16px;
-	text-align: center;
-}
-
-.siDeseas{
-	background: beige; 
-	font-size: 16px;
-	text-align: center
-}
-
-/*#formulario{
+#formulario{
   width: 272px;
   margin-left: 8px;
   position: center center;
 }
-*/
+
+.bienvenida{
+	width: 100%;
+	background: beige; 
+	font-size: 16px;
+	text-align: center;
+
+}
+
+.siDeseas{
+	width: 100%;
+	background: beige; 
+	font-size: 16px;
+	text-align: center
+	
+}
+
+#formulario{
+  width: 272px;
+  margin-left: 8px;
+  position: center center;
+}
