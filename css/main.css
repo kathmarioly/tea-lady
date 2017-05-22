@@ -1,17 +1,28 @@
 /* Escribe acá tus estilos*/
-#header {
-width: 100%;
-background: url(../img/maxresdefault.jpg) no-repeat;
-background-position:  center center;
+*{
+	font-family: 'Handlee', cursive;
 }
 
-#formulario{
-  width: 272px;
-  margin-left: 8px;
-  position: center center;
+
+#header {
+width: 99%;
+margin: 0px;
+background: url(../img/maxresdefault.jpg) no-repeat;
+}
+
+#titulo{
+	background-color: #ff4d4d;
+	padding: 10px;
+	font-size: 55px;
+	margin: 0px;
+	text-align: center;
+	color: whitesmoke;
+	font-family: 'Satisfy', cursive;
+
 }
 
 .bienvenida{
+	display: inline-block;
 	width: 100%;
 	background: beige; 
 	font-size: 16px;
@@ -19,16 +30,10 @@ background-position:  center center;
 
 }
 
-.siDeseas{
-	width: 100%;
-	background: beige; 
-	font-size: 16px;
-	text-align: center
-	
-}
+
 
 #formulario{
-  width: 272px;
+  width: 300px;
   margin-left: 8px;
   position: center center;
 }

@@ -1,24 +1,44 @@
-function datos(nombre, apellido, correo, direccion, telefono)
-this.nombre = nombre;
-this.apellido = apellido;
-this.correo = correo;
-this.direccion = direccion;
-this.telefono = telefono;
 
-};
+function validarFormulario(){
 
-function imprimir() {
-    var contenedor = document.getElementById("clientes");
-    var contenido = "";
+    var verificar = true;
+    var correctNombre=/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+    var correctEmail=/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 
-    //recorremos el arreglo listaStudent
-    imprimir.forEach(function(datos) {
-        contenido += "<div>" + datos.nombre + "<br>" +
-            "Apellido:" + datos.apellido + "<br>" +
-            "Correo Electrónico:" + datos.correo+ "<br>" +
-            "Dirección" + datos.direccion + "<br>" + "Teléfono: " + datos.telefono + "</div><br>";
-        console.log(contenido);
-    });
+    var formulario = document.getElementById("formulario");
+    var nombre = document.getElementById("nombre");
+    var email = document.getElementById("email");
+    var telefono= document.getElementById("telefono");
 
-    contenedor.innerHTML = contenido;
+    if(!nombre.value)
+    {
+        alert("Ingresa tu nombre");
+        nombre.correcto();
+        verificar = false;
+    }
+    else if(!correctNombre.error(nombre.value))
+    {
+        alert("ERROR: utiliza solo letras!");
+        nombre.correcto();
+        verificar=false;
+    }
+    
+    else if(!email.value)
+    {
+        alert("Ingresa email");
+        email.correcto();
+        verificar = false;
+    }
+    else if(!expRegEmail.error(email.value))
+    {
+        alert("ERROR!!");
+        email.correcto();
+        verificar=false;
+    }
+    
+    if(verificar)
+    {
+        alert("Se ha enviado el formulario");
+        document.contacto.submit();
+    }
 }
